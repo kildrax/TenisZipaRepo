@@ -23,6 +23,11 @@
           class="px-3 py-2 rounded-md transition-colors duration-200 text-gray-700 hover:text-[#078930] hover:bg-gray-50"
           >Ranking General
         </router-link>
+        <router-link
+          to="/login"
+          class="px-3 py-2 rounded-md transition-colors duration-200 text-gray-700 hover:text-[#078930] hover:bg-gray-50"
+          >Login
+          </router-link>
       </nav>
       <!-- Icono hamburgesa mobile -->
       <div class="md:hidden">
@@ -68,6 +73,11 @@
         @click="menuAbierto = false"
       >
         Ranking General
+      </router-link>
+      <router-link
+          to="/login"
+          class="px-3 py-2 rounded-md transition-colors duration-200 text-gray-700 hover:text-[#078930] hover:bg-gray-50"
+          >Login
       </router-link>
     </nav>
   </header>
