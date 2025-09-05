@@ -30,7 +30,7 @@ onMounted(() => {
   <!-- Sección del banner principal -->
   <section class="relative bg-gradient-to-r from-[#078930] to-[#065a24] text-white">
     <div class="absolute inset-0 bg-black opacity-20"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <div class="inline-block bg-[#da121a] text-white px-3 py-1 rounded-full text-sm mb-4">
@@ -50,10 +50,10 @@ onMounted(() => {
               Se abre la convocatoria para el torneo más importante del año. Premios en efectivo y
               trofeos para todas las categorías.
             </p>
-            <button
+            <a href="tel:+573213481481" target="_blank" rel="noopener"
               class="flex items-center text-white hover:text-green-200 cursor-pointer transition-colors"
             >
-              Leer más
+              Saber más
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -69,7 +69,7 @@ onMounted(() => {
               >
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
         <div class="relative">
@@ -84,7 +84,7 @@ onMounted(() => {
   </section>
   <!-- Sección estadisticas -->
   <section class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="text-center">
           <div
@@ -171,7 +171,7 @@ onMounted(() => {
   </section>
   <!-- Sección de próximos eventos -->
   <section class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Próximos Eventos</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
@@ -205,7 +205,7 @@ onMounted(() => {
             </div>
             <span class="text-sm text-gray-500">19/1/2025</span>
           </div>
-          <h3 class="font-semibold text-gray-900 mb-2">Clínica de Tenis para Principiantes</h3>
+          <h3 class="font-semibold text-gray-900 mb-2">Torneo de Tenis para Principiantes</h3>
           <div class="space-y-1 text-sm text-gray-600">
             <p>🕐 09:00 AM</p>
             <p>📍 Cancha Principal</p>
@@ -282,22 +282,17 @@ onMounted(() => {
   </section>
   <!-- Sección de unirse a comunidad -->
   <section class="py-16 bg-[#078930]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl font-bold text-white mb-4">¿Listo para unirte a nuestra comunidad?</h2>
       <p class="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
-        Forma parte del club de tenis más dinámico de Zipaquirá. Torneos, clínicas y mucha diversión
+        Forma parte del club de tenis más dinámico de Zipaquirá. Torneos, eventos y mucha diversión
         te esperan.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button
+        <a href="tel:+573213481481" target="_blank" rel="noopener"
           class="bg-white text-[#078930] px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
         >
-          Inscribirse Ahora</button
-        ><button
-          class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#078930] transition-colors"
-        >
-          Más Información
-        </button>
+          Inscribirse Ahora</a>
       </div>
     </div>
   </section>

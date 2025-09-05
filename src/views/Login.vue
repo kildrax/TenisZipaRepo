@@ -2,7 +2,7 @@
 
 </script>
 <template>
-<div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 w-11/12  md:p-8 dark:bg-gray-800 dark:border-gray-700 m-auto my-10 sm:my-20">
+<div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm shadow-[#078930] sm:p-6 w-11/12  md:p-8 dark:bg-gray-800 dark:border-gray-700 m-auto my-10 sm:my-20">
     <form class="space-y-6" action="#">
         <h5 class="text-xl font-medium text-gray-900 dark:text-white">Log in</h5>
         <div>

@@ -1,6 +1,14 @@
+<script setup>
+// filepath: d:\ProyectZipa-Sep2025\TenisZipa\src\components\Header.vue
+import { ref } from 'vue'
+import { useRoute } from 'vue-router'
+const menuAbierto = ref(false)
+const route = useRoute()
+</script>
+
 <template>
   <header class="p-4 bg-white shadow-sm border-b-2 border-[#078930]">
-    <div class="w-full max-w-7xl mx-auto flex justify-between items-center">
+    <div class="w-full max-w-6xl mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-3 flex-shrink-0">
         <img
           class="w-10 h-12 object-cover"
@@ -15,19 +23,32 @@
       <nav class="hidden md:flex space-x-8">
         <router-link
           to="/"
-          class="px-3 py-2 rounded-md transition-colors duration-200 bg-[#078930] text-white">
+          :class="[
+            'px-3 py-2 rounded-md transition-colors duration-200',
+            route.path === '/' ? 'bg-[#078930] text-white' : 'text-gray-700 hover:text-[#078930] hover:bg-gray-50']">
           Inicio
         </router-link>
         <router-link
           to="/ranking-general"
-          class="px-3 py-2 rounded-md transition-colors duration-200 text-gray-700 hover:text-[#078930] hover:bg-gray-50"
-          >Ranking General
+          :class="[
+            'px-3 py-2 rounded-md transition-colors duration-200',
+            route.path === '/ranking-general' ? 'bg-[#078930] text-white' : 'text-gray-700 hover:text-[#078930] hover:bg-gray-50']">
+          Ranking General
         </router-link>
         <router-link
           to="/login"
-          class="px-3 py-2 rounded-md transition-colors duration-200 text-gray-700 hover:text-[#078930] hover:bg-gray-50"
-          >Login
-          </router-link>
+          :class="[
+            'px-3 py-2 rounded-md transition-colors duration-200',
+            $route.path === '/login' ? 'bg-[#078930] text-white' : 'text-gray-700 hover:text-[#078930] hover:bg-gray-50']">
+          Login
+        </router-link>
+        <router-link
+          to="/registro"
+          :class="[
+            'px-3 py-2 rounded-md transition-colors duration-200',
+            $route.path === '/registro' ? 'bg-[#078930] text-white' : 'text-gray-700 hover:text-[#078930] hover:bg-gray-50']">
+          Registro
+        </router-link>
       </nav>
       <!-- Icono hamburgesa mobile -->
       <div class="md:hidden">
@@ -62,28 +83,36 @@
     >
       <router-link
         to="/"
-        class="block w-full text-left px-3 py-2 rounded-md transition-colors duration-200 bg-[#078930] text-white"
+        :class="[
+            'block px-3 py-2 rounded-md transition-colors duration-200',
+            route.path === '/' ? 'bg-[#078930] text-white' : 'text-gray-700 hover:text-[#078930] hover:bg-gray-50']"
         @click="menuAbierto = false"
       >
         Inicio
       </router-link>
       <router-link
         to="/ranking-general"
-        class="block w-full text-left px-3 py-2 rounded-md transition-colors duration-200 text-gray-700 hover:text-[#078930] hover:bg-gray-50"
+        :class="[
+            'block px-3 py-2 rounded-md transition-colors duration-200',
+            route.path === '/ranking-general' ? 'bg-[#078930] text-white' : 'text-gray-700 hover:text-[#078930] hover:bg-gray-50']"
         @click="menuAbierto = false"
       >
         Ranking General
       </router-link>
       <router-link
           to="/login"
-          class="px-3 py-2 rounded-md transition-colors duration-200 text-gray-700 hover:text-[#078930] hover:bg-gray-50"
+          :class="[
+            'block px-3 py-2 rounded-md transition-colors duration-200',
+            $route.path === '/login' ? 'bg-[#078930] text-white' : 'text-gray-700 hover:text-[#078930] hover:bg-gray-50']" @click="menuAbierto = false"
           >Login
+      </router-link>
+      <router-link
+          to="/registro"
+          :class="[
+            'block px-3 py-2 rounded-md transition-colors duration-200',
+            $route.path === '/registro' ? 'bg-[#078930] text-white' : 'text-gray-700 hover:text-[#078930] hover:bg-gray-50']" @click="menuAbierto = false"
+          >Registro
       </router-link>
     </nav>
   </header>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-const menuAbierto = ref(false)
-</script>
